@@ -65,6 +65,10 @@
     chain-length = <27>;
 };
 
+nice_view_spi: &spi0 {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
 &pro_micro_i2c {
     status = "disabled";
 };
